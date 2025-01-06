@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome to my GitHub Page">
+    <title>Welcome to My Page</title>
+    <style>
+        :root {
+            --primary-color: #4caf50; /* Green */
+            --secondary-color: #f0f0f0; /* Light gray */
+            --text-color: #333; /* Dark gray */
+            --accent-color: #ff9800; /* Orange */
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: var(--secondary-color);
+            color: var(--text-color);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        header {
+            text-align: center;
+            padding: 1rem;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+        }
+
+        header p {
+            font-size: 1.2rem;
+            color: var(--text-color);
+        }
+
+        a {
+            text-decoration: none;
+            color: var(--accent-color);
+            font-weight: bold;
+        }
+
+        a:hover {
+            color: var(--primary-color);
+        }
+
+        footer {
+            margin-top: auto;
+            padding: 1rem;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My GitHub Page</h1>
+        <p>Explore my projects and learn more about my work. Feel free to <a href="https://github.com/">visit my GitHub profile</a>.</p>
+    </header>
+
+    <footer>
+        &copy; <span id="year"></span> Your Name. All rights reserved.
+    </footer>
+
+    <script>
+        // Update the year dynamically
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
